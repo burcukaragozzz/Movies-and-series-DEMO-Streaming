@@ -71,7 +71,7 @@ class SearchResult extends PureComponent {
   }
 
   render() {
-    const { isShown, pagination } = this.state;
+    const { isShown } = this.state;
 
     const {
       type,
