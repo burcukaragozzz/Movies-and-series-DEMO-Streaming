@@ -1,0 +1,103 @@
+.search-results-container {
+  width: 100%;
+
+  .list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .filters-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+    padding: 0 5px;
+
+    .query-search-container{
+      display: flex;
+      flex-basis: 42%;
+      height: 35px;
+      box-shadow: 0 0 0 0, 0 2px 12px rgba(0,0,0,0.1);
+
+      .query-search-input {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding-left: 16px;
+      }
+
+      .query-search-button {
+        display: flex;
+        align-items: center;
+        background-color: #1E88E5;
+        border: none;
+
+        .search-icon {
+          display: flex;
+          padding: 0px 12px;
+        }
+      }
+    }
+    
+    .dropdown-menu-container {
+      flex-basis: 26%;
+      max-width: 26%;
+      position: relative;
+      box-shadow: 0 0 0 0, 0 2px 12px rgba(0,0,0,0.1);
+      padding-left: 16px;
+      padding-right: 16px;
+      color: rgb(48, 48, 48);
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      padding-top: 10px;
+
+      .dropdown-menu{
+        display: flex;
+        justify-content: space-between;
+         width: 100%;
+        align-items: center;
+        border: none;
+        background-color: #fff;
+        outline: none;
+
+        .dropdown-title {
+          width: 100%;
+          border: none;
+          outline: none;
+        }
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      .dropdown-list {
+        position: absolute;
+        box-shadow: 0 0 0 0, 0 10px 12px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        padding: 0;
+        margin-top: 6px;
+        right: 0;
+        width: 100%;
+
+        .dropdown-item {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 50px;
+          padding-left: 16px;
+          padding-right: 16px;
+          transition: all 0.2s ease 0s;
+        }
+        
+        .active {
+          &:after {
+            content: '✓';
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,39 @@
+.program-type-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  flex-basis: 18%;
+  min-width: 190px;
+
+  .program-type-container {
+    text-decoration: none;
+
+    .image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 250px;
+      background-color: rgb(53, 53, 53);
+  
+      img {
+        width: 100px;
+        opacity: 0.4;
+      }
+    }
+  
+    .program-type {
+      position: absolute;
+      top: 40%;
+      left: 20%;
+      font-size: 36px;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    .program-type-title {
+      color: rgb(24, 23, 23);
+      margin-top: 10px;
+    }
+  }
+}
